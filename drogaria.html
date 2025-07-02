@@ -5,7 +5,7 @@
   <title>Drogarias Ginobiotta</title>
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       background-color: #e6f2ff;
       margin: 0;
       padding: 0;
@@ -13,23 +13,19 @@
     }
     .container {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
     .container h2 {
-      font-size: 6vw;
-      margin: 40px 0;
-      color: #333;
+      font-size: 28px;
+      margin-bottom: 40px;
     }
     .addresses {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
     .address-box {
@@ -42,26 +38,14 @@
       text-decoration: none;
       color: #007BFF;
       font-weight: bold;
-      font-size: 4vw;
-      word-wrap: break-word;
     }
-    @media (min-width: 600px) {
-      .addresses {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .address-box {
-        flex: 1 1 40%;
-        max-width: 45%;
-      }
-      .container h2 {
-        font-size: 28px;
-      }
-      .address-box a {
-        font-size: 16px;
-      }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+      border-radius: 12px;
     }
+
     h2{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
